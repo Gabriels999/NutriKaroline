@@ -1,0 +1,142 @@
+@font-face{
+  font-family: 'Brittany';
+  src: url('./BrittanySignature.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgreen;
+  height: 6rem;
+  padding-right: 2%;
+}
+
+#cabecalho {
+  font-size: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+  background-color: lightgreen;
+}
+#page1 {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: space-between;
+}
+#foto1{
+  max-height: 85vh;
+  border-top-right-radius:45%;
+  border-bottom-right-radius:45%;
+}
+#titulo {
+  margin-right: 20%;
+  padding-top: 3%;
+}
+#titulo h1{
+  font-family: 'Brittany', sans-serif;
+  font-size: 80px;
+  color: black;
+}
+#titulo h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;  
+}
+#titulo p{
+  margin-top: 5%;
+  font-family: 'Poppins', sans-serif ;
+}
+
+#botaoPage1{
+  margin-top: 14%;
+  border: none;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+#botaoPage1:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  margin-top: 50px;
+  text-align: center;
+  gap: 250px;
+  background-image: url('lgbg.jpg');
+  max-height: 700px;
+}
+.texto {
+  margin-left: 20px;
+  max-width: 40%;
+}
+.subtexto {
+  margin-top: 25px;
+}
+.image {
+  max-width: 50%;
+}
+.Karol {
+  width: 100%;
+  max-height: 700px;
+}
+footer {
+  display: flex;
+  height: 35px;
+  background-color: lightgreen;
+  padding: 2%;
+  justify-content: space-between;
+}
+
+.local{
+  margin: 0;
+}
+
+.rodape {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  margin-right: 2%;
+}
+.end {
+  margin-left: 1%;
+}
+.wpp {
+  width: 60px;
+  height: 60px;
+}
+.insta {
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+.facebook {
+  width: 50px;
+  height: 50px;
+}
