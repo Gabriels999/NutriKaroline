@@ -2,6 +2,11 @@
   font-family: 'Brittany';
   src: url('./BrittanySignature.ttf');
 }
+:root{
+  --bars-color:lightgreen;
+  --detail-color: lightcoral;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,40 +14,48 @@
 html{
   scroll-behavior: smooth;
 }
-
 body {
   font-size: 16px;
   line-height: 1.5;
 }
+
+/*-----------------------PAGE1----------------------------------*/
 header {
   display: flex;
   justify-content: space-between;
-  background-color: lightgreen;
+  background-color: var(--bars-color);
   height: 6rem;
   padding-right: 2%;
 }
-
 #cabecalho {
-  font-size: 10px;
   list-style-type: none;
-  margin: 0;
   padding: 0.25rem;
   display: flex;
   align-items: center;
   gap: 1.5rem;
-}
-a {
   font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+#cabecalho li:hover{
+  opacity: 0.5;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.navlist {
   text-decoration: none;
   color: #000;
   font-size: 17px;
-  background-color: lightgreen;
 }
+#facebook {
+  width: 30px;
+  height: 30px;
+}
+
 #page1 {
   width: 100%;
   height: 85vh;
   display: flex;
-  justify-content: space-between;
+  background-image: url("./img/butterflies.jpg")
 }
 #foto1{
   max-height: 85vh;
@@ -50,8 +63,8 @@ a {
   border-bottom-right-radius:45%;
 }
 #titulo {
-  margin-right: 20%;
   padding-top: 3%;
+  margin-left: 12%;
 }
 #titulo h1{
   font-family: 'Brittany', sans-serif;
@@ -66,10 +79,8 @@ a {
   margin-top: 5%;
   font-family: 'Poppins', sans-serif ;
 }
-
-#botaoPage1{
+#btnPage1{
   margin-top: 14%;
-  border: none;
   padding: 30px;
   border-radius: 10px;
   border: 1px solid black;
@@ -77,66 +88,143 @@ a {
   font-size: 18px;
   transition: all 0.3s ease-in-out;
 }
-#botaoPage1:hover{
+#btnPage1:hover{
   background-color: rgba(0, 0, 0, 0.5);
-
+  transform: scale(1.1);
   cursor: pointer;
 }
+#wpp{
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  top: 85%;
+  left: 92%;
+  bottom: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+#wpp:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#btnUp{
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  top: 100px;
+  right: 15px;
+  display: none;
+  background-color: var(--detail-color);
+  border-radius: 50%;
+}
 
+/*-----------------------PAGE2----------------------------------*/
 .container {
   display: flex;
-  margin-top: 50px;
+  justify-content: space-around;
+  padding-top: 2%;
   text-align: center;
-  gap: 250px;
-  background-image: url('lgbg.jpg');
-  max-height: 700px;
+  max-height: 98vh;
+  background-image: url("./img/butterflies.jpg")
 }
-.texto {
-  margin-left: 20px;
-  max-width: 40%;
-}
-.subtexto {
-  margin-top: 25px;
-}
-.image {
-  max-width: 50%;
-}
-.Karol {
-  width: 100%;
-  max-height: 700px;
-}
-footer {
-  display: flex;
-  height: 35px;
-  background-color: lightgreen;
+.pagetext {
+  width: 45%;
+  height: 81vh;
+  background-color: var(--bars-color);
   padding: 2%;
-  justify-content: space-between;
+  border-radius: 5px;
+}
+.cont-title{
+  font-family: 'Brittany', sans-serif;
+  font-size: 60px;
+  color: black;
+  padding-top: 3%;
+}
+.cont-p{
+  padding: 2%;
+  margin-top: 5%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+.foto2 {
+  width: 100%;
+  max-height: 89vh;
+  box-shadow: 20px 10px var(--bars-color);
 }
 
-.local{
-  margin: 0;
+/*-----------------------PAGE3----------------------------------*/
+#especs{
+  list-style-image: url("./img/tomate.png");
 }
 
-.rodape {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  gap: 10%;
-  margin-right: 2%;
+/*-----------------------PAGE4----------------------------------*/
+#foto3{
+  width: 92%;
+  padding-top: 2%;
+  box-shadow: 20px 10px var(--bars-color);
+  border-radius: 5px;
 }
-.end {
-  margin-left: 1%;
+.text-contrast{
+  background-color: var(--detail-color);
+  border-radius: 5px;
 }
-.wpp {
-  width: 60px;
-  height: 60px;
+.icon-box{
+  background-color: var(--bars-color);
+  display: grid;
+  flex-wrap: wrap;
+  border: 2px solid #000;
+  margin-top: 6%;
+  border-radius: 5px;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
 }
-.insta {
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-}
-.facebook {
+.icon{
+  margin-left: 5%;
+  margin-top: 1%;
   width: 50px;
   height: 50px;
 }
+
+/*-----------------------PAGE5----------------------------------*/
+#duvidas{
+  width: 80%;
+  height: 81vh;
+  background-color: var(--bars-color);
+  padding: 2%;
+  border-radius: 5px;
+}
+#duv-list{
+  list-style: none;
+}
+
+
+/*-----------------------FOOTER---------------------------------*/
+#footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  height: 98vh;
+  background-color: var(--bars-color);
+}
+#endereco{
+  margin-left: 2%;
+  max-height: 75vh;
+  display: flex;
+  flex-direction: column;
+justify-content: space-between;
+}
+#btnFooter{
+  padding: 25px;
+  margin-top: 2%;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+#btnFooter:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
