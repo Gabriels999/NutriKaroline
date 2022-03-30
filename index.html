@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Karoline Silva - Nutricionista</title>
 </head>
+
 <body>
     <header>
             <img src="./assets/img/logo.png" alt="Logotipo da Nutricionista" id="logo" >
@@ -119,12 +120,24 @@
                         </a>
                 </div>
             </div>
-            <div>
+            <div id="map">
                 CAMPO DE GEOLOCALIZAÇÃO
             </div>
         </div>
 </body>
 <script>
+        function initMap(){
+       const consultorio = {lat: -22.894427113939262, lng: -43.11905473000065}
+       const map = new google.maps.Map(document.getElementById("map"),{
+           zoom: 18,
+           center: consultorio,
+       })
+        const marker = new google.maps.Marker({
+            poisition: consultorio,
+            map: map,
+        })
+        }
+
     const btnUp = document.querySelector('#btnUp')
 
     function scrollFunction(){
@@ -134,8 +147,12 @@
             btnUp.style.display = "none"
         }
     }
-
     window.onscroll = function(){scrollFunction()}
+
+</script>
+
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH2eEObTRqP1rPZYWFMvHQaLpw96mp2xU&callback=initMap">
 </script>
 
 </html>

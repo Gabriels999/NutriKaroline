@@ -4,7 +4,7 @@
 }
 :root{
   --bars-color:lightgreen;
-  --detail-color: lightcoral;
+  --detail-color: #90bbaf;
 }
 
 * {
@@ -55,7 +55,9 @@ header {
   width: 100%;
   height: 85vh;
   display: flex;
-  background-image: url("./img/butterflies.jpg")
+  background-image: url("./img/teste7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #foto1{
   max-height: 85vh;
@@ -98,10 +100,11 @@ header {
   height: 5rem;
   position: fixed;
   top: 85%;
-  left: 92%;
+  left: 94%;
   bottom: 0;
   right: 0;
   transition: all 0.3s ease-in-out;
+  z-index: 4;
 }
 #wpp:hover{
   transform: scale(1.1);
@@ -114,7 +117,7 @@ header {
   top: 100px;
   right: 15px;
   display: none;
-  background-color: var(--detail-color);
+  background-color: transparent;
   border-radius: 50%;
 }
 
@@ -125,7 +128,9 @@ header {
   padding-top: 2%;
   text-align: center;
   max-height: 98vh;
-  background-image: url("./img/butterflies.jpg")
+  background-image: url("./img/teste7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .pagetext {
   width: 45%;
@@ -228,3 +233,40 @@ justify-content: space-between;
   cursor: pointer;
 }
 
+#map{
+  height: 85%;
+  width: 40%;
+  margin-right: 5%;
+  margin-top: 5%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px){
+
+/* ----------------------------PAGE1------------------------------------ */
+#cabecalho{
+  display: none;
+}
+#titulo h1{
+  font-size: 60px;
+  }
+  #titulo h2{
+    font-size: 17px;
+  }
+  #wpp{
+    top: 85%;
+    left: 90%;
+  }
+  /* ----------------------------PAGE2------------------------------------ */
+  .pagetext{
+    width: 100%;
+    margin: 2%;
+  }
+  .foto2{
+    display: none;
+  }
+  #btnPage1{
+    margin-top: 4%;
+  }
+
+}
