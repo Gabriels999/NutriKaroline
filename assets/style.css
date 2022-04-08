@@ -119,6 +119,7 @@ header {
   display: none;
   background-color: transparent;
   border-radius: 50%;
+  z-index: 4;
 }
 
 /*-----------------------PAGE2----------------------------------*/
@@ -164,7 +165,7 @@ header {
 
 /*-----------------------PAGE4----------------------------------*/
 #foto3{
-  width: 92%;
+  width: 80%;
   padding-top: 2%;
   box-shadow: 20px 10px var(--bars-color);
   border-radius: 5px;
@@ -172,6 +173,9 @@ header {
 .text-contrast{
   background-color: var(--detail-color);
   border-radius: 5px;
+}
+#consult-list{
+  height: 35vh;
 }
 .icon-box{
   background-color: var(--bars-color);
@@ -198,10 +202,10 @@ header {
   padding: 2%;
   border-radius: 5px;
 }
+
 #duv-list{
   list-style: none;
 }
-
 
 /*-----------------------FOOTER---------------------------------*/
 #footer {
@@ -240,7 +244,21 @@ justify-content: space-between;
   margin-top: 5%;
   border-radius: 5px;
 }
+/* LAPTOP */
+@media screen and (max-width: 1024px){
+  #wpp{
+    top: 85%;
+    left: 92%;
+  }
+  .cont-title{
+    font-size: 40px
+  }
+  #end-text h4{
+    font-size: 16px;
+  }
+}
 
+/* TABLET */
 @media screen and (max-width: 768px){
 
 /* ----------------------------PAGE1------------------------------------ */
@@ -252,18 +270,18 @@ header{
 }
 #titulo h1{
   font-size: 60px;
-  }
-  #titulo h2{
-    font-size: 17px;
-  }
-  #wpp{
-    top: 85%;
-    left: 90%;
-  }
+}
+#titulo h2{
+  font-size: 17px;
+}
+#wpp{
+  top: 85%;
+  left: 90%;
+}
   /* ----------------------------PAGE2------------------------------------ */
   .pagetext{
-    width: 100%;
-    margin: 2%;
+    width: 80%;
+    margin: 0 0 0 9%;
   }
   .foto2{
     display: none;
@@ -271,6 +289,7 @@ header{
   #btnPage1{
     margin-top: 4%;
   }
+<<<<<<< HEAD
 
 }
 @media screen and (max-width: 425px){
@@ -279,5 +298,104 @@ header{
   }
   #btnPage1{
     margin-right: 10%;
+=======
+  /* ----------------------------PAGE3------------------------------------ */
+  #especs{
+    padding-left: 2%;
+  }
+  /* ----------------------------PAGE4------------------------------------ */
+  .container {
+    display: block;
+    justify-content: center;
+    padding-top: 2%;
+    text-align: center;
+    max-height: 100%;
+    background-image: url("./img/teste7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #duvidas{
+    margin: 0 0 0 9%
+  }
+  #footer{
+    display: block;
+  }
+  #endereco{
+    margin: 0 0 0 9%;
+    width: 80%;
+    flex-direction: row;
+  }
+  #btnFooter{
+    padding: 10px;
+  }
+  #map{
+    height: 50%;
+    width: 84%;
+    margin: 2% 0 0 9%;
+    border-radius: 5px;
+    background-color: var(--bars-color);
+  }
+}
+@media screen and (max-width: 425px){
+  #foto1{
+    max-height: 50vh;
+  }
+  #titulo{
+    margin-left: 7%;
+  }
+  #titulo h1{
+    font-size: 60px;
+  }
+  #titulo p{
+    display: none;
+  }
+  #wpp{
+    top: 85%;
+    left:0;
+    width: 4rem;
+  }
+  #btnPage1{
+    padding: 25px;
+    font-size: 14px;
+    margin-top: 20%;
+  }
+  #btnUp{
+    top: 165px;
+    right: 15px;
+  }
+  .cont-p{
+    font-size: 16px;
+  }
+  .pagetext{
+    height: 65vh;
+  }
+  #consult-list{
+    display: none;
+  }
+  #duvidas{
+    height: 55vh;
+  }
+  #endereco{
+    flex-direction: column;
+  }
+  #end-text{
+    width: 100%;
+  }
+  #end-text h4{
+    font-size: 12px;
+  }
+  #end-contacts{
+    width: 100%;
+  }
+  #end-contacts h4{
+    width: 100%;
+    font-size: 12px;
+  }
+  #btnFooter{
+    margin-left: 20%;
+  }
+  #map{
+    height: 40%;
+>>>>>>> e9078658170d73b79522636a0956e2b1fea28170
   }
 }
