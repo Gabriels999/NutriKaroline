@@ -244,6 +244,9 @@ justify-content: space-between;
 @media screen and (max-width: 768px){
 
 /* ----------------------------PAGE1------------------------------------ */
+header{
+  justify-content: center;
+}
 #cabecalho{
   display: none;
 }
@@ -269,4 +272,12 @@ justify-content: space-between;
     margin-top: 4%;
   }
 
+}
+@media screen and (max-width: 425px){
+  #titulo h1{
+    font-size: 55px;
+  }
+  #btnPage1{
+    margin-right: 10%;
+  }
 }
