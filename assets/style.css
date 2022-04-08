@@ -289,16 +289,6 @@ header{
   #btnPage1{
     margin-top: 4%;
   }
-<<<<<<< HEAD
-
-}
-@media screen and (max-width: 425px){
-  #titulo h1{
-    font-size: 55px;
-  }
-  #btnPage1{
-    margin-right: 10%;
-=======
   /* ----------------------------PAGE3------------------------------------ */
   #especs{
     padding-left: 2%;
@@ -340,11 +330,12 @@ header{
   #foto1{
     max-height: 50vh;
   }
+
   #titulo{
     margin-left: 7%;
   }
   #titulo h1{
-    font-size: 60px;
+    font-size: 55px;
   }
   #titulo p{
     display: none;
@@ -358,6 +349,7 @@ header{
     padding: 25px;
     font-size: 14px;
     margin-top: 20%;
+    margin-right: 10%;
   }
   #btnUp{
     top: 165px;
@@ -396,6 +388,81 @@ header{
   }
   #map{
     height: 40%;
->>>>>>> e9078658170d73b79522636a0956e2b1fea28170
+  }
+}
+@media screen and (max-width: 320px){
+  #page1{
+    display: block;
+    height: 82vh;
+  }
+  #foto1{
+    max-height: 44vh;
+    padding: 0 25%;
+  }
+
+  #titulo{
+    margin-left: 4%;
+    padding-top: 0%;
+  }
+  #titulo h1{
+    font-size: 40px;
+    margin-top: 5px;
+    padding: 0 13%;
+  }
+  #titulo h2{
+    font-size: 15px;
+    padding: 0 10%;
+  }
+  #titulo p{
+    display: none;
+  }
+  #wpp{
+    top: 85%;
+    left:4%;
+    width: 4rem;
+    height: 3rem;
+  }
+  #btnPage1{
+    padding: 13px;
+    font-size: 14px;
+    margin: 1% 21% 0;
+  }
+  #btnUp{
+    top: 165px;
+    right: 15px;
+  }
+  .cont-p{
+    font-size: 16px;
+  }
+  .pagetext{
+    height: 65vh;
+  }
+  #consult-list{
+    display: none;
+  }
+  #duvidas{
+    height: 55vh;
+  }
+  #endereco{
+    flex-direction: column;
+  }
+  #end-text{
+    width: 100%;
+  }
+  #end-text h4{
+    font-size: 12px;
+  }
+  #end-contacts{
+    width: 100%;
+  }
+  #end-contacts h4{
+    width: 100%;
+    font-size: 12px;
+  }
+  #btnFooter{
+    margin-left: 20%;
+  }
+  #map{
+    height: 40%;
   }
 }
